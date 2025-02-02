@@ -1,0 +1,61 @@
+.servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  padding-top: 100px;
+}
+.servico {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#211e2e, #3a3456, #211e2e);
+  width: 25%;
+  gap: 18px;
+  padding: 20px 20px 50px 20px;
+  border-radius: 30px;
+  position: relative;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+.servico img {
+  border-radius: 50%;
+  border: 10px solid #211e2e;
+}
+.servico-titulo {
+  color: #fff;
+  text-transform: uppercase;
+}
+.servico hr {
+  border: 1px solid #8176af50;
+  width: 200px;
+}
+.servico-texto {
+  color: #c0b7e8;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.servico-botao {
+  background: linear-gradient(to right, #8176af, #c0b7e8);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0px solid #c0b7e8;
+  color: #343045;
+  border-radius: 30px;
+  padding: 20px 35px;
+}
+@media screen and (max-width: 1200px) {
+  .servicos {
+    flex-wrap: wrap;
+  }
+  .servico {
+    width: 300px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .servicos {
+    width: 100%;
+  }
+}

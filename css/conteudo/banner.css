@@ -1,0 +1,193 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  position: relative;
+}
+.banner-conteudo {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner-titulo {
+  display: block;
+  font-size: 3rem;
+  color: #fff;
+  padding-top: 20px;
+}
+.banner-titulo > span {
+  background-image: linear-gradient(to right, #8176af, #c0b7e8);
+  background-clip: text;
+  color: transparent;
+}
+.banner-subtitulo {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #c0b7e8;
+  padding-right: 200px;
+  padding-bottom: 60px;
+}
+.banner-botao {
+  display: flex;
+  align-items: center;
+}
+.banner-botao img {
+  cursor: pointer;
+  width: 70px;
+}
+
+.banner-botao a {
+  background: linear-gradient(to right, #8176af, #c0b7e8);
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0px solid #c0b7e8;
+  color: #343045;
+  border-radius: 30px;
+  padding: 20px 35px;
+}
+.banner-img {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+}
+.banner-img .hero {
+  border: 18px solid #2a2637ac;
+  border-radius: 20% 20% 20% 45%;
+}
+.banner-img .vetor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -100px;
+  border: none;
+  z-index: -1;
+}
+
+.banner-contatos {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  background: linear-gradient(to right, #211e2e, #3a3456, #211e2e);
+  padding: 40px 60px;
+  border-radius: 80px;
+}
+.banner-contatos .local,
+.telefone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+hr {
+  border: 1px solid #8176af98;
+}
+.banner-contatos-titulo {
+  color: #fff;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+.banner-contatos-subtitulo {
+  color: #c0b7e8;
+  font-size: 0.8rem;
+}
+.banner-contatos > img {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .banner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-titulo {
+    font-size: 2rem;
+    max-width: 25ch;
+  }
+  .banner-subtitulo,
+  .banner-botao img {
+    display: none;
+  }
+  .banner-container {
+    width: 100%;
+    background-image: url(/imgs/hero-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+
+  }
+  .banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-conteudo {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  .banner-botao a {
+    width: 400px;
+  }
+  .banner-img .vetor {
+    display: none;
+  }
+  .banner-contatos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 20px;
+
+  }
+  .banner-contatos > img {
+    display: block;
+    padding: 8px 11px;
+    border: 5px solid #1a1822cf;
+    background: linear-gradient(to right, #8176af, #c0b7e8);
+    width: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .primeiro {
+    display: flex !important;
+  }
+  .banner-contatos .local, .telefone, .email,  hr {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    padding-top: 10px;
+  }
+.banner-img .hero {
+  width: 80%;
+}
+.banner-container {
+  background-size: 120%;
+  background-position-y: -130px;
+}
+.banner-titulo {
+  font-size: 1.8rem;
+}
+.banner-botao a {
+  width: 250px;
+}
+.banner-contatos .local img, .telefone img, .email img {
+  width: 30px;
+
+}
+.banner-contatos-titulo {
+  font-size: 0.9rem;
+}
+.banner-contatos-subtitulo {
+  font-size: 0.7rem;
+}
+
+}
+
