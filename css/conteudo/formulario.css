@@ -62,7 +62,7 @@ textarea {
   gap: 20px;
   padding-top: 20px;
 }
-.contato-botao {
+.contato-botao, .botao-enviar {
   background: linear-gradient(to right, #8176af, #c0b7e8);
   font-size: 1rem;
   font-weight: 600;
@@ -74,7 +74,9 @@ textarea {
   width: 250px;
   text-align: center;
 }
-
+.botao-enviar {
+  width: 100%;
+}
 @media screen and (max-width: 1050px) {
   .form {
     display: flex;

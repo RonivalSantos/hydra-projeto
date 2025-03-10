@@ -11,9 +11,8 @@
 <body>
   <header>
     <div class="menu-navigation">
-      <nav class="navigation">
+      <nav class="navigation js-menu">
         <img src="./imgs/icones/logo.png" alt="Logo Hydra">
-
         <ul class="navigation-links">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
@@ -21,7 +20,7 @@
           <li><a href="#construcao">Como Fazer</a></li>
         </ul>
         <div class="menu-botoes">
-          <a class="contato" href="#">Contate-nos</a>
+          <a class="contato" href="#contato">Contate-nos</a>
           <a class="junte-se" href="#">Junte-se à hydra</a>
         </div>
         <button class="mobile-btn">
@@ -30,17 +29,17 @@
         </button>
       </nav>
 
-      <nav class="mobile-navigation">
+      <nav class="mobile-navigation js-menu">
         <div>
           <ul>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Tecnologias</a></li>
-            <li><a href="">Como Fazer</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+            <li><a href="#construcao">Como Fazer</a></li>
           </ul>
           <div class="menu-botoes">
-            <a class="contato menu-botoes" href="#">Contate-nos</a>
-            <a class="junte-se menu-botoes" href="#">Junte-se à hydra</a>
+            <a class="contato menu-botoes" href="#contato">Contate-nos</a>
+            <a class="junte-se menu-botoes" href="">Junte-se à hydra</a>
           </div>
         </div>
       </nav>
@@ -101,7 +100,7 @@
       </div>
     </section>
 
-    <section class="introducao">
+    <section class="introducao" id="sobre">
       <div class="introducao-conteudo">
         <div class="intro">
           <h2 class="introducao-titulo">Introdução</h2>
@@ -137,7 +136,7 @@
       </div>
     </section>
 
-    <section class="servicos">
+    <section class="servicos" id="servicos">
       <div class="servico">
         <img src="./imgs/service-image1.png" alt="">
         <h2 class="servico-titulo">Simulação</h2>
@@ -171,7 +170,7 @@
       </div>
     </section>
 
-    <section class="tecnologias">
+    <section class="tecnologias" id="tecnologias">
       <div class="tecnologias-conteudo">
         <h2 class="tecnologias-titulo">Tecnologias e Hardware</h2>
         <h3 class="tecnologias-subtitulo">Usado pelo Hydra VR.</h3>
@@ -186,7 +185,7 @@
       </div>
     </section>
 
-    <section class="construcao">
+    <section class="construcao" id="construcao">
       <div class="construcao-conteudo">
         <div>
           <h2 class="construcao-titulo">Como construímos</h2>
@@ -235,7 +234,7 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form" id="contato">
       <div class="formulario">
         <div class="form-texto">
           <h2 class="form-titulo">Junte-se à Hydra</h2>
@@ -249,6 +248,7 @@
             <input type="text" name="telefone" placeholder="Número de telefone (+55)">
             <input type="text" name="assunto" id="assunto" placeholder="Assunto">
             <textarea type="text" name="mensagem" id="mensagem" placeholder="Diga-nos algo" rows="5"></textarea>
+            <a href="" class="botao-enviar">Enviar</a>
           </form>
         </div>
       </div>
