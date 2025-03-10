@@ -75,7 +75,9 @@ textarea {
   text-align: center;
 }
 .botao-enviar {
-  width: 100%;
+  margin-top: 10px;
+  width: 110%;
+  cursor: pointer;
 }
 @media screen and (max-width: 1050px) {
   .form {
