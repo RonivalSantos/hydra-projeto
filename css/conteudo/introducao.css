@@ -1,15 +1,20 @@
-.introducao-conteudo, .introducao-motivo {
+.introducao-conteudo,
+.introducao-motivo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-top: 100px;
 }
-.introducao-conteudo h2, .sobre-titulo, .motivo-titulo {
+.introducao-conteudo h2,
+.sobre-titulo,
+.motivo-titulo {
   font-size: 2.3rem;
-  color: #D6D6DA;
+  color: #d6d6da;
   text-transform: uppercase;
 }
-.introducao-conteudo p, .sobre-texto, .motivo-texto {
+.introducao-conteudo p,
+.sobre-texto,
+.motivo-texto {
   color: #c0b7e8;
   font-size: 0.9rem;
   line-height: 1.3rem;
@@ -18,11 +23,12 @@
   display: flex;
   align-items: center;
 }
-.arrow-long h3, .sobre-subtitulo {
+.arrow-long h3,
+.sobre-subtitulo {
   text-transform: uppercase;
   font-size: 1.9rem;
   font-weight: 500;
-  color: #D6D6DA;
+  color: #d6d6da;
 }
 .arrow-long img {
   width: 150px;
@@ -34,7 +40,7 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 100px;
 }
-.sobre-img img{
+.sobre-img img {
   border-radius: 40% 10% 40% 10%;
   width: 400px;
 }
@@ -57,7 +63,11 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .introducao-conteudo img, .introducao-motivo img, .conteudo-texto, .sobre-titulo, .sobre-subtitulo {
+  .introducao-conteudo img,
+  .introducao-motivo img,
+  .conteudo-texto,
+  .sobre-titulo,
+  .sobre-subtitulo {
     display: none;
   }
   .introducao-conteudo {
@@ -80,7 +90,7 @@
   }
   .sobre-botao {
     display: block;
-    width: 90%;
+    width: 80%;
     text-align: center;
   }
   .introducao-motivo {
@@ -95,4 +105,7 @@
   .motivo-titulo {
     font-size: 1.8rem;
   }
-} 
+.introducao-conteudo {
+  padding-top: 40px;
+}
+}

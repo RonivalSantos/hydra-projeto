@@ -8,10 +8,59 @@ header {
 .menu-navigation {
   padding: 28px 2% 28px 2%;
 }
-/* mobile */
+
+/* Esconde o menu e coloca ele fora da tela */
 .mobile-navigation {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%; /* Começa fora da tela */
+  width: 100%; /* Ajuste para maior ou menor */
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.4s ease-in-out; /* Animação suave */
+  z-index: -1; /* Para garantir que fique sobre o conteúdo */
+  border-bottom: 1px solid #c2c2c2ac;
 }
+
+/* Menu visível */
+.mobile-navigation.ativo {
+  right: 0; /* Move para dentro da tela */
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  gap: 30px;
+}
+
+/* Itens do menu */
+.mobile-links li {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+/*
+.mobile-navigation li a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+  text-transform: uppercase;
+} */
+
+.mobile-navigation li a:hover {
+  color: #c0b7e8;
+}
+
 .mobile-btn {
   background-color: transparent;
   border: none;
@@ -20,34 +69,21 @@ header {
 .fechar {
   display: none;
 }
-.mobile-navigation.ativo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 15px;
-  align-items: center;
-}
-.mobile-navigation.ativo li {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  padding-bottom: 30px;
-  font-weight: 600;
-}
-.mobile-navigation.ativo .menu-botoes {
+
+.mobile-navigation .menu-botoes {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.mobile-navigation.ativo .menu-botoes a {
+.mobile-navigation .menu-botoes a {
   display: flex;
   align-items: center;
   width: 300px;
   padding: 20px;
 }
-/* fim mobile */
 
+/* fim mobile */
 
 .navigation {
   display: flex;
@@ -95,7 +131,8 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-  .navigation-links, .menu-botoes {
+  .navigation-links,
+  .menu-botoes {
     display: none;
   }
   .mobile-btn {
@@ -103,5 +140,4 @@ header {
     cursor: pointer;
   }
 }
-
 

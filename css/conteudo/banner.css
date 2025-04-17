@@ -114,8 +114,6 @@ hr {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-
-
   }
   .banner {
     width: 100%;
@@ -126,10 +124,10 @@ hr {
     text-align: center;
   }
   .banner-conteudo {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
   .banner-botao a {
     width: 400px;
@@ -143,7 +141,9 @@ hr {
     align-items: center;
     justify-items: center;
     padding: 30px 20px;
-
+  }
+  .banner-contatos hr {
+    height: 40px;
   }
   .banner-contatos > img {
     display: block;
@@ -154,40 +154,54 @@ hr {
     border-radius: 50%;
     cursor: pointer;
   }
-  .primeiro {
+  /* .primeiro {
     display: flex !important;
   }
   .banner-contatos .local, .telefone, .email,  hr {
     display: none;
+  } */
+}
+
+/* parte onde vai começar a ser slide */
+@media screen and (max-width: 900px) {
+  .banner-contatos hr {
+    display: none;
+  }
+  .banner-contatos {
+    display: flex;
   }
 }
+
 @media screen and (max-width: 600px) {
   .banner {
     padding-top: 10px;
   }
-.banner-img .hero {
-  width: 80%;
+  .banner-img .hero {
+    width: 80%;
+  }
+  .banner-container {
+    background-size: 120%;
+    background-position-y: -130px;
+  }
+  .banner-titulo {
+    font-size: 1.8rem;
+  }
+  .banner-botao a {
+    width: 250px;
+  }
+  .banner-contatos {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .banner-contatos .local img,
+  .telefone img,
+  .email img {
+    width: 30px;
+  }
+  .banner-contatos-titulo {
+    font-size: 0.9rem;
+  }
+  .banner-contatos-subtitulo {
+    font-size: 0.7rem;
+  }
 }
-.banner-container {
-  background-size: 120%;
-  background-position-y: -130px;
-}
-.banner-titulo {
-  font-size: 1.8rem;
-}
-.banner-botao a {
-  width: 250px;
-}
-.banner-contatos .local img, .telefone img, .email img {
-  width: 30px;
-
-}
-.banner-contatos-titulo {
-  font-size: 0.9rem;
-}
-.banner-contatos-subtitulo {
-  font-size: 0.7rem;
-}
-
-}
-
